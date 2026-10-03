@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portafolio de Leandro Kummer, Analista de Sistemas y desarrollador fullstack Ssr. C#, .NET, Delphi, Angular, TypeScript.">
+<title>Leandro Kummer | Desarrollador Fullstack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F6F3EC;--surface:#FFFFFF;--line:#DDD6C7;--fg:#1B2233;--muted:#5D6678;--accent:#1F4FD8;--accent-ink:#FFFFFF;--soft:#E7EDFC;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1320;--surface:#171D30;--line:#2A3350;--fg:#EEF1F8;--muted:#98A3BD;--accent:#8FB0FF;--accent-ink:#0F1320;--soft:#1E2742;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1320;--surface:#171D30;--line:#2A3350;--fg:#EEF1F8;--muted:#98A3BD;--accent:#8FB0FF;--accent-ink:#0F1320;--soft:#1E2742;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:17px;line-height:1.6;padding-inline:16px;padding-block:0}
+.w{max-width:860px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:20px;flex-wrap:wrap}
+.mk{font-family:'Fraunces',serif;font-weight:700;font-size:20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--fg)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.hero{padding-block:56px 48px;border-bottom:1px solid var(--line)}
+.hero p.k{margin:0 0 10px;color:var(--muted);font-size:16px}
+h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(40px,8vw,76px);line-height:1.02;letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
+.lead{max-width:56ch;font-size:19px;margin:0 0 26px;color:var(--fg)}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.b{display:inline-flex;align-items:center;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;border:1.5px solid var(--line);color:var(--fg);background:var(--surface)}
+.b.p{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+section{padding-block:48px;border-bottom:1px solid var(--line)}
+h2{font-family:'Fraunces',serif;font-size:32px;margin:0 0 24px;letter-spacing:-.01em}
+.row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 32px;padding-block:18px;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row .m{color:var(--muted);font-size:15px}
+.row h3{margin:0 0 4px;font-size:19px}
+.row p{margin:0;max-width:60ch;color:var(--muted)}
+.pr{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:16px}
+.tag{display:inline-block;font-size:13px;font-weight:700;background:var(--soft);color:var(--accent);padding:3px 10px;border-radius:999px;margin-bottom:12px}
+.ct{display:flex;flex-direction:column;gap:10px;font-size:18px}
+.ct a{color:var(--accent);font-weight:700;overflow-wrap:anywhere}
+footer{padding-block:28px 40px;color:var(--muted);font-size:14px}
+@media (max-width:620px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+<header><span class="mk">Leandro Kummer</span>
+<nav><a href="#sobre">Sobre mí</a><a href="#stack">Tecnologías</a><a href="#experiencia">Experiencia</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav></header>
+<div class="hero">
+<p class="k">Córdoba, Argentina · Analista de Sistemas</p>
+<h1>Desarrollador fullstack Ssr.</h1>
+<p class="lead">Más de 4 años desarrollando software: sistemas para la industria aeronáutica, software de gestión y aplicaciones web a medida. Trabajo con C# / .NET, Delphi, Angular y TypeScript.</p>
+<div class="cta"><a class="b p" href="https://www.linkedin.com/in/leandrokummer/" target="_blank" rel="noopener">Ver mi LinkedIn</a><a class="b" href="https://github.com/Leandro1905" target="_blank" rel="noopener">GitHub</a><a class="b" href="https://wa.me/5493512501838?text=Hola%20Leandro%2C%20vi%20tu%20portafolio." target="_blank" rel="noopener">WhatsApp</a></div>
+</div>
+<section id="sobre"><h2>Sobre mí</h2>
+<p style="max-width:60ch;margin:0 0 16px">Soy Analista de Sistemas y desarrollador fullstack semi senior. Hoy trabajo en Seabury Solutions sobre Alkym, un software de mantenimiento aeronáutico: resuelvo incidencias técnicas y corrijo errores directamente en el código. Antes desarrollé software de gestión en Flexxus y aplicaciones con C#, Angular y TypeScript en HKA IT Experts.</p>
+<p style="max-width:60ch;margin:0">Fuera del trabajo armo mis propios proyectos: un sistema de ventas y stock, un sistema de turnos para una barbería y una aplicación web para una academia. Con ellos fundé Leank Software. Inglés: lectura y escritura buenas.</p></section>
+<section id="stack"><h2>Tecnologías</h2>
+<div class="pr">
+<div class="card"><h3>Lenguajes</h3><p>C#, Delphi (Pascal Objects), TypeScript, JavaScript, Java, SQL</p></div>
+<div class="card"><h3>Frameworks</h3><p>.NET Framework, Angular</p></div>
+<div class="card"><h3>Bases de datos</h3><p>Firebird, SQL, MongoDB</p></div>
+<div class="card"><h3>Herramientas</h3><p>Git y GitHub, Docker, Jira, Scrum</p></div>
+</div></section>
+<section id="experiencia"><h2>Experiencia</h2>
+<div class="row"><div class="m">Abr 2025 – actualidad</div><div><h3>Ingeniero de Software Ssr · Seabury Solutions</h3><p>Soporte y desarrollo sobre Alkym, software de mantenimiento aeronáutico (MRO). Resolución de incidencias en Jira y correcciones en el código. C#, .NET Framework.</p></div></div>
+<div class="row"><div class="m">Ene 2023 – feb 2025</div><div><h3>Desarrollador Full Stack · Flexxus</h3><p>Desarrollo de software de gestión con Pascal Objects (Delphi) y base de datos Firebird.</p></div></div>
+<div class="row"><div class="m">Mar 2022 – ene 2023</div><div><h3>Desarrollador · HKA IT Experts</h3><p>Desarrollo de aplicaciones con C#, Angular y TypeScript.</p></div></div>
+<div class="row"><div class="m">En paralelo</div><div><h3>Fundador · Leank Software</h3><p>Sistemas de gestión, webs, apps y chatbots a medida para pymes y emprendedores.</p></div></div>
+<div class="row"><div class="m">2019 – 2023</div><div><h3>Analista de Sistemas · Colegio Universitario IES21</h3><p>Título terciario en Análisis de Sistemas.</p></div></div>
+</section>
+<section id="proyectos"><h2>Proyectos</h2>
+<div class="pr">
+<div class="card"><span class="tag">Producto propio</span><h3>LeankStore</h3><p>Sistema de gestión para comercios: ventas, stock y caja en un solo lugar.</p></div>
+<div class="card"><span class="tag">Proyecto real</span><h3>Turnos para una barbería</h3><p>Aplicación web de reservas para una barbería, donde los clientes sacan turno solos.</p></div>
+<div class="card"><span class="tag">Proyecto real</span><h3>Aplicación para una academia</h3><p>Aplicación web para una academia de entrenamiento.</p></div>
+</div></section>
+<section id="contacto" style="border-bottom:0"><h2>Hablemos</h2>
+<div class="ct"><a href="https://www.linkedin.com/in/leandrokummer/" target="_blank" rel="noopener">linkedin.com/in/leandrokummer</a><a href="https://github.com/Leandro1905" target="_blank" rel="noopener">github.com/Leandro1905</a><span>WhatsApp: +54 9 351 250-1838</span></div></section>
+<footer>© Leandro Kummer</footer>
+</div>
+</body>
+</html>
